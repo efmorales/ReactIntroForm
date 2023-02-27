@@ -24,13 +24,12 @@ class MovieForm extends Component {
             actors: '',
             imdbRating: '',
             year: '',
-            dateAdded: `${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}`
+            dateAdded: new Date().toString()
         }
         this.state = this.initialState;
 
     }
 
-    // this is where they become one, and then I will delete the others
     handleChange = (event) => {
         const {name, value} = event.target;
 
@@ -42,7 +41,14 @@ class MovieForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
+        const newDate = new Date().toString();
+
+        this.setState({dateAdded:newDate});
+
+        
         this.props.addMovie(this.state);
+
+        this.initialState.dateAdded = newDate;
 
         this.setState(this.initialState);
     }
