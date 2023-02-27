@@ -24,7 +24,7 @@ class MovieForm extends Component {
             actors: '',
             imdbRating: '',
             year: '',
-            dateAdded: ''
+            dateAdded: `${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}`
         }
         this.state = this.initialState;
 
@@ -77,7 +77,8 @@ class MovieForm extends Component {
                 <label>
                     IMDB Rating:
                     <input type="text" name="imdbRating" className="imdbRatingInput" value={this.state.imdbRating} onChange={this.handleChange} />
-                </label>               
+                </label>
+               
                 <input type="submit" value="Submit" />
             </form>
         )
