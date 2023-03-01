@@ -27,7 +27,7 @@ import { Component } from 'react';
                     <td>{row.director}</td>
                     <td>{row.year}</td>
                     <td>{row.plot}</td>
-                    <td>{row.actors.join(", ")}</td>
+                    <td>{row.actors}</td>
                     <td>{row.imdbRating}</td>
                     <td>{row.dateAdded}</td>
                     <td>
