@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactintroform/static/css/main.073c9b0a.css",
-    "main.js": "/reactintroform/static/js/main.45120f80.js",
+    "main.js": "/reactintroform/static/js/main.0f1c4440.js",
     "static/js/787.7db84fcc.chunk.js": "/reactintroform/static/js/787.7db84fcc.chunk.js",
     "index.html": "/reactintroform/index.html",
     "main.073c9b0a.css.map": "/reactintroform/static/css/main.073c9b0a.css.map",
-    "main.45120f80.js.map": "/reactintroform/static/js/main.45120f80.js.map",
+    "main.0f1c4440.js.map": "/reactintroform/static/js/main.0f1c4440.js.map",
     "787.7db84fcc.chunk.js.map": "/reactintroform/static/js/787.7db84fcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.45120f80.js"
+    "static/js/main.0f1c4440.js"
   ]
 }
