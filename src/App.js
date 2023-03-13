@@ -28,7 +28,9 @@ class App extends Component {
   // search Movie
   searchMovie = (searchTerm) => {
     const movies = [...this.state.movies];
+    // filter movies by term and type
     const filteredMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
     this.setState({ movies: filteredMovies });
   }
 
